@@ -1,3 +1,7 @@
-const ErrorMessage = () => <p>Щось пішло не так, спробуйте пізніше.</p>;
+import css from "./ErrorMessage.module.css";
+
+const ErrorMessage = () => (
+  <p className={css.message}>Щось пішло не так, спробуйте пізніше.</p>
+);
 
 export default ErrorMessage;

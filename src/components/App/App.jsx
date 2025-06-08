@@ -31,7 +31,7 @@ const App = () => {
         setError(false);
       } catch {
         setError(true);
-        toast.error("Щось пішло не так. Спробуйте ще раз.");
+        toast.error("Something went wrong. Please try again.");
       } finally {
         setIsLoading(false);
       }
@@ -42,7 +42,7 @@ const App = () => {
 
   const handleSearch = (newQuery) => {
     if (newQuery === "") {
-      toast("Введи текст для пошуку");
+      toast("Enter search text");
       return;
     }
 
